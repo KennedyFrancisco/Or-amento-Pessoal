@@ -201,9 +201,9 @@ function carregarListaDespesas(despesas = Array(), filtro = false) {
         btn.onclick = function() {
             // remover a despesa
 
-            let id = this.id.replace("id_despesa", "")
+            let id = this.id.replace('id_despesa', '')
 
-            bd.remover(this.id)
+            bd.remover(id)
 
             window.location.reload()
         }
